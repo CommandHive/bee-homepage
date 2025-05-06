@@ -2,9 +2,9 @@ import React from 'react';
 import { Feature } from '../../../models/common';
 import { FeatureComponent } from './FeatureComponent';
 
-import Feature1 from '../../../assets/features/feature1.webp';
-import Feature2 from '../../../assets/features/feature2.webp';
-import Feature3 from '../../../assets/features/feature3.webp';
+import Feature1 from '../../../assets/home/features/feature1.webp';
+import Feature2 from '../../../assets/home/features/feature2.webp';
+import Feature3 from '../../../assets/home/features/feature3.webp';
 
 export const Features: React.FC = () => {
     const features: Feature[] = [

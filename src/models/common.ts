@@ -16,3 +16,9 @@ export type Question = {
     question: string;
     description: string;
 };
+
+export type AboutStatsItem = {
+    icon: string;
+    title: string;
+    count: number;
+};
