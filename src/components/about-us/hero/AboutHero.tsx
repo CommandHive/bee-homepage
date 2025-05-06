@@ -1,12 +1,11 @@
 import React from 'react';
 import { AboutStatsItem } from '../../../models/common';
-import { HexagonGrid } from '../../HexagonGrid';
 import { AboutStatsCard } from './AboutStatsCard';
 
-import Bee from '../../../assets/about/hero/about_bee.webp';
-import Stats1Icon from '../../../assets/about/hero/active_agents.svg';
-import Stats2Icon from '../../../assets/about/hero/subagents.svg';
-import Stats3Icon from '../../../assets/about/hero/transactions.svg';
+import Bee from '../../../assets/about-us/hero/about_bee.webp';
+import Stats1Icon from '../../../assets/about-us/hero/active_agents.svg';
+import Stats2Icon from '../../../assets/about-us/hero/subagents.svg';
+import Stats3Icon from '../../../assets/about-us/hero/transactions.svg';
 
 export const AboutHero: React.FC = () => {
     const aboutStatsItems: AboutStatsItem[] = [
@@ -28,14 +27,13 @@ export const AboutHero: React.FC = () => {
     ];
 
     return (
-        <section className="w-full relative bg-black text-white">
-            <HexagonGrid disableMouseMovement={true} />
+        <section className="w-full h-full relative bg-black hexagon-grid-gradient text-white">
             <div className="z-20 pointer-events-none w-full h-full absolute top-0 left-0 bottom-right-sharp-edge-rectangle"></div>
 
             <div className="z-20 relative pointer-events-none app-container flex items-center !pb-20 !pt-28 md:!pb-24 md:!pt-32 lg:!pb-28 lg:!pt-36 xl:gap-x-8 xl:!pb-20 xl:!pt-28">
                 <div className="flex-1">
                     <h1 className="main-title">About Us</h1>
-                    <p className="section-body mt-2 md:mt-3 lg:mt-4 xl:mt-5 2xl:mt-6">
+                    <p className="section-body mt-2 md:mt-3 lg:mt-4 xl:mt-5 xl:w-[80%] 2xl:mt-6">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut ut labore et dolore Ut enim ad minim veniam, quis nostrud exercitation
