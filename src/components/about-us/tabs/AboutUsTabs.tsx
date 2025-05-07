@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import React, { useState } from 'react';
-import { AboutTab } from './AboutTab';
+import { AboutTab } from './about/AboutTab';
 import { RoadmapTab } from './RoadmapTab';
 import { TeamTab } from './TeamTab';
 import { TreasuryTab } from './TreasuryTab';

@@ -29,7 +29,7 @@ export const Features: React.FC = () => {
     ];
 
     return (
-        <section className="text-white bg-black bottom-right-sharp-edge-rectangle">
+        <section className="text-white bg-black top-right-sharp-edge-rectangle">
             <div className="app-container flex flex-col md:flex-col gap-y-14 2xl:gap-y-16">
                 {features.map((feature, index) => (
                     <FeatureComponent

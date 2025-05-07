@@ -22,3 +22,9 @@ export type AboutStatsItem = {
     title: string;
     count: number;
 };
+
+export type WorkingProcessStep = {
+    icon: string;
+    title: string;
+    description: string;
+};
