@@ -52,3 +52,21 @@ export type FundingData = {
     sources: FundingSource[];
     expenses: Expense[];
 };
+
+export enum SocialPlatform {
+    LINKEDIN = 'linkedin',
+    PORTFOLIO = 'portfolio',
+}
+
+export type SocialLink = {
+    platform: SocialPlatform;
+    url: string;
+};
+
+export type TeamMember = {
+    name: string;
+    position: string;
+    image: string;
+    description: string;
+    socialLinks: SocialLink[];
+};

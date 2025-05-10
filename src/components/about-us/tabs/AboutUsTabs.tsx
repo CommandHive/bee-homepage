@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 import React, { useState } from 'react';
 import { AboutTab } from './about/AboutTab';
 import { RoadmapTab } from './RoadmapTab';
-import { TeamTab } from './TeamTab';
+import { TeamTab } from './team/TeamTab';
 import { TreasuryTab } from './treasury/TreasuryTab';
 import { UpdatesTab } from './UpdatesTab';
 
