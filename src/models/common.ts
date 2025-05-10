@@ -28,3 +28,27 @@ export type WorkingProcessStep = {
     title: string;
     description: string;
 };
+
+export type TreasuryStatsItem = {
+    icon: string;
+    title: string;
+    amount: number;
+};
+
+export type FundingSource = {
+    name: string;
+    type: string;
+    amount: number;
+};
+
+export type Expense = {
+    type: string;
+    amount: number;
+    color: string;
+    icon: string;
+};
+
+export type FundingData = {
+    sources: FundingSource[];
+    expenses: Expense[];
+};

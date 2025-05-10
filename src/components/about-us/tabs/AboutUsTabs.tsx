@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { AboutTab } from './about/AboutTab';
 import { RoadmapTab } from './RoadmapTab';
 import { TeamTab } from './TeamTab';
-import { TreasuryTab } from './TreasuryTab';
+import { TreasuryTab } from './treasury/TreasuryTab';
 import { UpdatesTab } from './UpdatesTab';
 
 type AboutUsTabItem = {
@@ -35,7 +35,7 @@ export const AboutUsTabs: React.FC = () => {
     };
 
     return (
-        <div className="w-full">
+        <div className="w-full overflow-hidden">
             <div className="app-container !py-0 bg-offWhite">
                 <div className="w-full border-b border-b-[#D5D9EB] py-2 md:py-4 xl:py-5">
                     <div className="grid grid-cols-5 bg-white rounded overflow-hidden text-black font-semibold border border-[#000000] border-opacity-15">

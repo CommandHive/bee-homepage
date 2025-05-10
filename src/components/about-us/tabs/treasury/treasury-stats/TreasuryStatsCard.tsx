@@ -1,19 +1,19 @@
 import React from 'react';
-import { WorkingProcessStep } from '../../../../../models/common';
+import { TreasuryStatsItem } from '../../../../../models/common';
 
 import HexagonGridBackground from '../../../../../assets/about-us/hexagon_grid_bg.webp';
 
-type ProcessStepCardProps = {
+type TreasuryStatsCardProps = {
     index: number;
-    step: WorkingProcessStep;
+    stats: TreasuryStatsItem;
 };
 
-export const ProcessStepCard: React.FC<ProcessStepCardProps> = ({ index, step }) => {
+export const TreasuryStatsCard: React.FC<TreasuryStatsCardProps> = ({ index, stats }) => {
     return (
         <div
-            className={`outlined-card overflow-hidden relative flex flex-col gap-y-4 md:w-3/4 md:mx-auto lg:w-full lg:m-0 ${index % 2 !== 0 ? '!bg-primary !border-none' : ''}`}
+            className={`outlined-card overflow-hidden relative flex flex-col gap-y-4 w-3/4 mx-auto md:mx-0 md:w-full ${index === 2 ? '!bg-primary !border-none !text-white' : ''}`}
         >
-            {index % 2 !== 0 && (
+            {index === 2 && (
                 <div className="w-full h-full absolute -top-[10%] left-1/2">
                     <img
                         src={HexagonGridBackground}
@@ -23,13 +23,13 @@ export const ProcessStepCard: React.FC<ProcessStepCardProps> = ({ index, step })
             )}
             <div className="w-14 md:w-16 lg:w-20 xl:w-24">
                 <img
-                    src={step.icon}
-                    alt={step.title}
+                    src={stats.icon}
+                    alt={stats.title}
                 />
             </div>
             <div className="flex flex-col gap-y-2">
-                <h3 className="section-subheading">{step.title}</h3>
-                <p className="section-body">{step.description}</p>
+                <p className="section-body">{stats.title}</p>
+                <h3 className="section-heading">${stats.amount.toLocaleString()}</h3>
             </div>
         </div>
     );

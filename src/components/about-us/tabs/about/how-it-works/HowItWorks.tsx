@@ -35,7 +35,7 @@ export const HowItWorks: React.FC = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
                 dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
             </p>
-            <div className="w-full grid grid-cols-1 mt-6 gap-y-4 lg:grid-cols-3 lg:gap-x-5 xl:mt-10">
+            <div className="w-full grid grid-cols-1 mt-6 gap-y-4 lg:grid-cols-3 lg:gap-x-5 xl:mt-10 2xl:gap-x-6">
                 {workingProcessSteps.map((step, index) => (
                     <ProcessStepCard
                         key={index}
