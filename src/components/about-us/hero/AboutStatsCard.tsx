@@ -3,8 +3,8 @@ import { AboutStatsItem } from '../../../models/common';
 
 export const AboutStatsCard: React.FC<{ stats: AboutStatsItem }> = ({ stats }) => {
     return (
-        <div className="w-1/2 p-[6px] flex gap-x-[6px] border border-white border-opacity-50 bg-white bg-opacity-20 rounded md:w-full md:p-2 md:gap-x-2 xl:rounded-md xl:p-3 xl:gap-x-3 2xl:rounded-lg 2xl:p-4 2xl:gap-x-4">
-            <div className="w-1/4 p-2 h-fit bg-primary rounded md:w-[30%] md:p-3 lg:w-1/4 xl:p-2">
+        <div className="w-1/2 p-[6px] flex gap-x-[6px] border border-white border-opacity-50 bg-white bg-opacity-20 rounded md:w-full md:p-2 md:gap-x-2 xl:rounded-md xl:p-3 xl:gap-x-3 2xl:rounded-lg">
+            <div className="w-10 h-10 p-2 bg-primary rounded md:w-12 md:h-12 xl:w-[54px] xl:h-[54px] xl:p-[10px] 2xl:w-[56px] 2xl:h-[56px">
                 <img
                     src={stats.icon}
                     alt={stats.title}
