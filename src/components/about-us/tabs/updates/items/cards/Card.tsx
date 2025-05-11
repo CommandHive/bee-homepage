@@ -9,12 +9,12 @@ export const Card: React.FC<{ cardData: CardsItem }> = ({ cardData }) => {
             <img
                 src={cardData.icon}
                 alt={cardData.title}
-                className="w-11 md:w-12 xl:w-16"
+                className="w-11 md:w-12 xl:w-16 2xl:w-20"
             />
             <div className="flex flex-col">
                 <p className="light-gray-rounded-card-heading !font-medium">{cardData.title}</p>
                 <div className="flex items-end gap-x-1 xl:gap-x-2">
-                    <h4 className="section-heading xl:mt-1">
+                    <h4 className="section-heading xl:mt-1 2xl:mt-2">
                         {cardData.isCurrency ? '$' : ''}
                         {cardData.number.toLocaleString()}
                     </h4>

@@ -101,3 +101,10 @@ export type Update = {
     date: string;
     items: UpdateItem[];
 };
+
+export type RoadMapItem = {
+    date: string;
+    title: string;
+    description: string;
+    isCompleted: boolean;
+};
