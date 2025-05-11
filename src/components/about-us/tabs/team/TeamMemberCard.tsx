@@ -26,7 +26,7 @@ export const TeamMemberCard: React.FC<{ member: TeamMember }> = ({ member }) => 
 
             <div className="outlined-card -mt-12 !pt-14 z-[5] text-center flex flex-col gap-y-3 md:-mt-14 md:!pt-16 xl:-mt-[72px] xl:!pt-[88px] xl:gap-y-4">
                 <p className="section-body !text-primary !font-bold">{member.position.toUpperCase()}</p>
-                <h3 className="section-subheading">{member.name}</h3>
+                <h3 className="font-anton text-lg md:text-xl xl:text-2xl 2xl:text-3xl">{member.name}</h3>
                 <p className="section-body">{member.description}</p>
                 <div className="flex justify-center gap-x-[10px]">
                     {member.socialLinks.map((link, index) => (

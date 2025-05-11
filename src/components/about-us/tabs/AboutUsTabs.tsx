@@ -4,7 +4,7 @@ import { AboutTab } from './about/AboutTab';
 import { RoadmapTab } from './RoadmapTab';
 import { TeamTab } from './team/TeamTab';
 import { TreasuryTab } from './treasury/TreasuryTab';
-import { UpdatesTab } from './UpdatesTab';
+import { UpdatesTab } from './updates/UpdatesTab';
 
 type AboutUsTabItem = {
     id: string;

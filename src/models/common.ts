@@ -70,3 +70,34 @@ export type TeamMember = {
     description: string;
     socialLinks: SocialLink[];
 };
+
+export enum UpdateItemType {
+    LIST = 'list',
+    CARDS = 'cards',
+}
+
+export type ListPoint = {
+    id: number;
+    text: string;
+};
+
+export type CardsItem = {
+    icon: string;
+    title: string;
+    number: number;
+    isCurrency?: boolean;
+    change: number;
+};
+
+export type UpdateItem = {
+    type: UpdateItemType;
+    title: string;
+    icon?: string;
+    points?: ListPoint[];
+    cards?: CardsItem[];
+};
+
+export type Update = {
+    date: string;
+    items: UpdateItem[];
+};
